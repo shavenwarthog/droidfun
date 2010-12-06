@@ -1,0 +1,145 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background: #cbd2d8;
+    background-image: -moz-linear-gradient(left, #c5ccd4, #c5ccd4 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(90deg, #496178, #2E4960);
+    background-image: -webkit-gradient(linear, left top, right top, from(#c5ccd4), color-stop(0.75, #c5ccd4), color-stop(0.75, transparent), to(transparent)); 
+    -webkit-background-size: 7px 100%;
+    -moz-background-size: 7px 100%;
+    font: normal 16px/22px Helvetica, Arial, Sans-serif; 
+    /* font: normal xx-large Helvetica, Arial, Sans-serif; */
+    -webkit-text-size-adjust: 100%;
+}
+section, nav {
+    display: block;
+    padding: 20px;
+}
+article {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    /* -webkit-transition: all 0.5s  ease-in-out; */
+    /* -moz-transition: all 0.5s  ease-in-out; */
+}
+.current {
+    left: 0px;
+}
+.button {
+    -webkit-box-shadow: 2px 2px 3px #999; 
+    -moz-box-shadow: 2px 2px 3px #999; 
+    border: solid 1px #000;
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px 15px;
+    /* -webkit-transition: all 0.5s  ease-in-out; */
+    /* -moz-transition: all 0.5s  ease-in-out; */
+}
+.button:hover {
+    -webkit-box-shadow: 0px 0px 8px #000; 
+    -moz-box-shadow: 0px 0px 8px #000; 
+}
+.back {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    background-image: -moz-linear-gradient(top, lightblue, darkblue 50%, blue);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(blue), color-stop(0.5, darkblue));
+    color: #fff;
+}
+ul, li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.menuList {
+}
+.menuList li {
+    cursor: pointer;
+    padding: 8px;
+    border-left:  1px solid #AAA;
+    border-right: 1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+    background-color: #fff;
+    font-weight: bold;
+}
+.menuList li:hover {
+    background-color: lightblue;
+}
+.menuList li:first-of-type {
+    border-top: 1px solid #AAA;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-topleft: 10px;
+}
+.menuList li:last-of-type {
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+}
+#Home {
+    background: #cbd2d8;
+    background-image: -moz-linear-gradient(left, #c5ccd4, #c5ccd4 75%, transparent 75%, transparent);
+    background-image: -webkit-gradient(linear, left top, right top, from(#c5ccd4), color-stop(0.75, #c5ccd4), color-stop(0.75, transparent), to(transparent)); 
+    -webkit-background-size: 7px 100%;
+    -moz-background-size: 7px 100%;
+}
+
+header {
+    display: block;
+    padding: 4px 20px;
+    margin: -20px -20px 20px -20px;
+    background-image: -moz-linear-gradient(top, #b0bccd, #889bb3 50%, #8195af 50%, #6d84a2); 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#b0bccd), color-stop(0.5, #889bb3), color-stop(0.5, #8195af), to(#6d84a2));
+    border-top: 1px solid #cdd5df;
+    border-bottom: 1px solid #2d3642; 
+}
+header:after {
+    content: ".";
+    display: block;
+    clear: both;
+    font-size: 0px;
+    line-height: 0px;
+    visibility: hidden;
+}
+h1 {
+    font: bold 21px/26px "Lucida Grande";
+    letter-spacing: -1px;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin: 0px;
+    float: left;
+}
+
+/* parking spaces: */
+.space {
+   width: 2em; 
+    color: white;
+    font-weight: bold;
+    float: right;
+}
+/* XX not quite */
+.space:hover {
+    -webkit-box-shadow: 0px 0px 8px #000; 
+    -moz-box-shadow: 0px 0px 8px #000; 
+}
+
+/* car colors: */
+.carcolor td {
+    font-size: smaller;
+    color: white;
+    width: 3em;
+    }
+/* highlight colors and "empty" */
+.carcolor td[bgcolor]:hover {
+    -webkit-box-shadow: 0px 0px 8px #000; 
+    -moz-box-shadow: 0px 0px 8px #000; 
+}
+.empty {
+    background-color: #444;
+}
